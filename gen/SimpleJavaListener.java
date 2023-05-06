@@ -47,6 +47,16 @@ public interface SimpleJavaListener extends ParseTreeListener {
 	 */
 	void exitClassBodyDeclaration(SimpleJavaParser.ClassBodyDeclarationContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link SimpleJavaParser#constructorDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterConstructorDeclaration(SimpleJavaParser.ConstructorDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleJavaParser#constructorDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitConstructorDeclaration(SimpleJavaParser.ConstructorDeclarationContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link SimpleJavaParser#fieldDeclaration}.
 	 * @param ctx the parse tree
 	 */

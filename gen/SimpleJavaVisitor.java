@@ -34,6 +34,12 @@ public interface SimpleJavaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitClassBodyDeclaration(SimpleJavaParser.ClassBodyDeclarationContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link SimpleJavaParser#constructorDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitConstructorDeclaration(SimpleJavaParser.ConstructorDeclarationContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link SimpleJavaParser#fieldDeclaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

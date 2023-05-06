@@ -75,6 +75,7 @@ classBody : LeftCurly classBodyDeclaration (RightCurly | RightCurly);
 /* Deklaracja w klasie może być deklaracją metody lub pola. */
 classBodyDeclaration : (methodDeclaration | fieldDeclaration)*;
 
+
 /* Deklaracja pola składa się z typu, identyfikatora i średnika */
 fieldDeclaration : type Identifier Semicolon (fieldDeclaration|methodDeclaration)* | type  assignmentStatement (fieldDeclaration|methodDeclaration)*;
 
