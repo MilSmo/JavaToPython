@@ -9,7 +9,7 @@ Main : 'main';
 String: 'String';
 Int: 'int';
 Char: 'char';
-Bool: 'bool';
+Bool: 'boolean';
 Float: 'float';
 Extends : 'extends';
 Return : 'return';

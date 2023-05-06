@@ -78,6 +78,9 @@ public class JavaToPythonConverter extends SimpleJavaBaseListener {
             if (type.equals("char") || type.equals("String")) {
                 pythonCode.append("    ").append(identifier).append(" = \"\"\n");
             }
+            if (type.equals("boolean")) {
+                pythonCode.append("    ").append(identifier).append(" = False\n");
+            }
         }
         else{
             pythonCode.append(ctx.assignmentStatement().getText());

@@ -9,10 +9,10 @@ public class Main {
 
     public static void main(String[] args) {
         String javaCode = "public class HelloWorld{"+
-                "String v;"+
+                "String slowo;"+
 //                "HelloWorld(int k){"+
 //                "}"+
-                "public void xd(String s){"+
+                "public void funkcja(String s){"+
                 "int x = 5;"+
                 "x++;"+
                 "x--;"+
@@ -22,7 +22,8 @@ public class Main {
                 "System.out.println(\"Hello World\");"+
                 "}"+
                 "}"+
-                "public class Maj{}";
+                "public class Goodbye{" +
+                "boolean b;}" ;
 
         SimpleJavaLexer lexer = new SimpleJavaLexer(CharStreams.fromString(javaCode));
         CommonTokenStream tokens = new CommonTokenStream(lexer);
